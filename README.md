@@ -1,4 +1,4 @@
-# WCM(SWB,Irri) Model
+# WCM(SWB) Model with irrigation scheme
 
 <p align="center">
   <img src="docs/graphical_abstract.png" width="600"
