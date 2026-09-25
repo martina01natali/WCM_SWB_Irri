@@ -1,0 +1,33 @@
+{
+    "options": {
+        "__comment_runs__": "Glob over the run folders under paths.root_output (one folder per 01_calibration run, i.e. its data_output.folder_plot). '*' = every run.",
+        "runs": "*",
+        "__comment_run_labels__": "Optional display names for run folders; unlisted runs are shown by folder name.",
+        "run_labels": {
+            "yearround": "Year-round",
+            "seasonal": "Seasonal"
+        },
+        "opt_obs": "VV",
+        "opt_veg": "NDVI",
+        "__comment_single_field__": "02_single_field.ipynb: which run/field/stage to show (null = first found / final stage).",
+        "single_run": null,
+        "single_field": null,
+        "single_stage": null,
+        "__comment_irri__": "Irrigation season as day-of-year bounds (match run_calibration.py's irrigation mask, DOY 90-270).",
+        "opt_year": 2018,
+        "irri_start_doy": 90,
+        "irri_end_doy": 270,
+        "aggregations": ["1D", "7D", "15D"],
+        "irrigated_thresholds_mm": [1, 5, 10, 20],
+        "__comment_group_by__": "02_parameters.ipynb: optional shapefile attribute to group fields by (e.g. 'Crop'); group_map optionally maps its values to coarser classes.",
+        "group_by": null,
+        "group_map": {}
+    },
+    "paths": {
+        "root_output": "${WCM_DATA_ROOT}/01_calibration/output",
+        "file_shapes": "${WCM_DATA_ROOT}/study_sites/Ceregnano/shapefile/*.geojson",
+        "folder_analysis": "${WCM_DATA_ROOT}/02_analysis/output",
+        "opt_save_plots": false,
+        "extension_plot": ".png"
+    }
+}

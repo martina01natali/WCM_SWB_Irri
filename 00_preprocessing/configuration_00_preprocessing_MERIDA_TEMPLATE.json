@@ -1,0 +1,28 @@
+{
+    "options": {
+        "years": [2021],
+        "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        "variables": {
+            "PREC": "PREC",
+            "T2": "TEMP"
+        },
+        "opt_merge": true,
+        "opt_overwrite": false
+    },
+    "server": {
+        "url": "sftp://merida-sftp.rse-web.it",
+        "remote_path": "/merida/METEO/Output/ope/WRFAMEZ/ECMWF/hres/{yyyymm}/{variable}/MERIDA_HRES_{variable}_{yyyymm}.nc",
+        "user_env": "MERIDA_USER",
+        "password_env": "MERIDA_PASSWORD",
+        "opt_insecure": false
+    },
+    "paths": {
+        "root": "${WCM_DATA_ROOT}/study_sites/Ceregnano",
+        "data_output": {
+            "folder_monthly": "merida/monthly/",
+            "filename_monthly": "MERIDA_HRES_{variable}_{yyyymm}.nc",
+            "folder_merged": "merida/",
+            "filename_merged": "MERIDA_{label}_{start}-{end}.nc"
+        }
+    }
+}

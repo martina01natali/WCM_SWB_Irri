@@ -1,0 +1,83 @@
+{
+    "options": {
+        "opt_mode": "yearround",
+        "opt_veg": "NDVI",
+        "opt_field": "ceregnano",
+        "opt_obs": "VV",
+        "opt_meteo": "merida",
+        "start_date": "2021-01-01",
+        "end_date": "2021-12-31",
+        "opt_year": null,
+        "format_date": "%Y-%m-%d"
+    },
+    "paths": {
+        "root": "${WCM_DATA_ROOT}/study_sites/Ceregnano",
+        "filename_logging": "01_calibration.log",
+        "data_input": {
+            "file_shapes": "shapefile/*.geojson",
+            "file_sigma0": "sigma0/s0_{opt_field}_2017-23.nc",
+            "file_ndvi": "ndvi/ndvi_{opt_field}_2017-23.nc",
+            "file_reanalysis": "merida/MERIDA_PREC_TEMP.nc",
+            "file_MERIDA": [
+                "merida/MERIDA_PREC_202101-202112.nc",
+                "merida/MERIDA_TEMP_202101-202112.nc"
+            ],
+            "file_SoilGrids": "inputs/soilgrids/soilgrids_{opt_field}_*.tif"
+        },
+        "data_output": {
+            "root_plot": "${WCM_DATA_ROOT}/01_calibration",
+            "folder_plot": "output/yearround/",
+            "filename_output": "output",
+            "filename_trace_nc": "trace",
+            "filename_irrigation_samples": "irrigation_samples",
+            "filename_template": "{root_plot}{filename_output}_{opt_field}_{opt_obs}{add_description}",
+            "filename_configuration": "configuration",
+            "filename_table_params": "table-params",
+            "filename_quad": "plot-quad",
+            "filename_trace": "plot-trace",
+            "filename_pair": "plot-pair",
+            "extension_plot": ".png",
+            "opt_save": true,
+            "opt_save_plots": true
+        }
+    },
+    "input": {
+        "__comment__": "Datetime values must be the first column.",
+        "cols_in_sigma0": ["datetime", "latitude", "longitude", "orb", "VV", "VH", "CR", "angle"],
+        "cols_out_sigma0": ["datetime", "latitude", "longitude", "orb", "VV", "VH", "CR", "angle"],
+        "time_freq_in": "h",
+        "time_freq_out": "h",
+        "time_form": "%Y-%m-%d %H:%M:%S"
+    },
+    "field_params": {
+        "epot": "hargre",
+        "soil_layer_weighting": "thickness",
+        "depth1_add": 100,
+        "depth2": 500,
+        "rho_st": 0.5,
+        "freq": 4
+    },
+    "calibration": {
+        "PAR": {
+            "A_init": 0.2,
+            "B_init": 0.2,
+            "C_init": -15.0,
+            "D_init": 30.0,
+            "Ksat_init": null,
+            "lam_init": null,
+            "WW_fc_init": null,
+            "WW_w_init": null,
+            "WW_start_init": null,
+            "irri_thr_init": 0.3,
+            "irri_cf_init": 0.1,
+            "Kc0_init": 1.0
+        },
+        "calibrate_Kc0": false,
+        "run_params": {
+            "n_tunes": 25000,
+            "n_draws": 15000,
+            "n_chains": 5,
+            "n_cores": 5
+        }
+    }
+}

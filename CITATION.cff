@@ -1,0 +1,55 @@
+cff-version: 1.2.0
+message: >-
+  This software was developed for the paper listed under "references".
+  If you use it, please cite both the software (Zenodo DOI of the version
+  you used) and the paper.
+type: software
+title: "WCM_SWB_Irri: field-scale irrigation estimation with a soil water balance model coupled to the Water Cloud Model"
+authors:
+  - family-names: Natali
+    given-names: Martina
+    email: martinanatali@cnr.it
+repository-code: "https://github.com/martina01natali/WCM_SWB_Irri"
+license: GPL-3.0-only
+version: 0.1.0
+abstract: >-
+  Per-field Bayesian (PyMC) calibration of a two-layer soil water balance
+  model coupled to the Water Cloud Model against Sentinel-1 backscatter and
+  Sentinel-2 NDVI, to estimate irrigation from satellite data without in-situ
+  measurements. Includes the scripts that download the input data
+  (Sentinel-1/2 via Google Earth Engine, SoilGrids, MERIDA) and notebooks to
+  analyse the results.
+keywords:
+  - irrigation
+  - Sentinel-1
+  - Sentinel-2
+  - Water Cloud Model
+  - soil water balance
+  - Bayesian calibration
+references:
+  - type: article
+    title: "Field-scale irrigation estimation using Sentinel-1 and Sentinel-2 data within a soil water balance model coupled to the Water Cloud Model"
+    authors:
+      - family-names: Natali
+        given-names: Martina
+      - family-names: Modanesi
+        given-names: Sara
+      - family-names: De Santis
+        given-names: Domenico
+      - family-names: De Lannoy
+        given-names: Gabriëlle
+      - family-names: Steele-Dunne
+        given-names: Susan
+      - family-names: Flammini
+        given-names: Alessia
+      - family-names: Domeneghetti
+        given-names: Alessio
+      - family-names: Massari
+        given-names: Christian
+    journal: "Remote Sensing of Environment"
+    volume: 346
+    start: 115639
+    year: 2026
+    issn: 0034-4257
+    doi: 10.1016/j.rse.2026.115639
+    url: "https://www.sciencedirect.com/science/article/pii/S0034425726004098"

@@ -1,0 +1,25 @@
+# Optional extra environment for 00_preprocessing (Google Earth Engine downloads).
+# Needed to download the input data (Sentinel-1/2, SoilGrids, MERIDA), also for
+# the Ceregnano example; calibration and analysis only need environment.yml.
+name: wcm_swb_preprocessing
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - numpy=1.26.*
+  - scipy=1.14.*
+  - pandas=2.2.*
+  - xarray=2024.7.*
+  - netcdf4=1.7.*
+  - matplotlib=3.9.*
+  - ipykernel=6.29.*
+  - jupyterlab
+  - cartopy
+  - rioxarray
+  - rasterio
+  - shapely
+  - pyproj
+  - pip:
+      - earthengine-api
+      - geojson

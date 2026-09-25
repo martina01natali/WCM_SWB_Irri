@@ -1,0 +1,48 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+env/
+conda/
+
+# Run outputs (this repo ships code only, no data or results)
+output/
+outputs/
+*.log
+
+# Editor/OS
+.DS_Store
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints
+
+# MERIDA downloads (00_preprocessing/download_merida.py) — large, not shipped.
+# The site-extracted cache study_sites/<site>/merida/MERIDA_PREC_TEMP.nc is kept.
+study_sites/*/merida/monthly/
+study_sites/*/merida/MERIDA_*_[0-9][0-9][0-9][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9][0-9][0-9].nc
+*.part
+
+# Internal (maintainer) notes, not distributed
+*.internal.md
+
+# Input data are downloaded on demand by 00_preprocessing, never committed.
+# Only the field polygons (study_sites/<site>/shapefile/), which the user
+# provides, are kept.
+study_sites/*/*
+!study_sites/*/shapefile/
+!study_sites/*/README.md
+inputs/
+
+# Maintainer notes (kept locally, not distributed)
+CLAUDE.md
+reports/
+Paper_citation.txt
+.claude/
+
+# Not part of the published code yet
+03_sensitivity/

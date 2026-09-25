@@ -1,0 +1,53 @@
+{
+    "options": {
+        "opt_field": null,
+        "start_date": "2017-01-01",
+        "end_date": "2023-12-31",
+        "format_date": "%Y-%m-%d",
+        "timezone": "Europe/Rome",
+        "gee_project": "${GEE_PROJECT}",
+        "chunk_days": 10,
+        "opt_overwrite": false
+    },
+    "paths": {
+        "root": "${WCM_DATA_ROOT}/study_sites/Ceregnano",
+        "data_input": {
+            "file_shapes": "shapefile/*.geojson"
+        },
+        "data_output": {
+            "folder_sigma0": "sigma0/",
+            "filename_sigma0": "s0_{opt_field}_2017-23",
+            "folder_ndvi": "ndvi/",
+            "filename_ndvi": "ndvi_{opt_field}_2017-23",
+            "folder_soil": "inputs/soilgrids/",
+            "filename_soil": "soilgrids_{opt_field}",
+            "folder_plots": "${WCM_DATA_ROOT}/00_preprocessing/output/",
+            "opt_save_single_tif": false,
+            "opt_save_multiday_tif": false,
+            "opt_save_plots": true
+        }
+    },
+    "sentinel1": {
+        "collection": "COPERNICUS/S1_GRD_FLOAT",
+        "reference_angle": 40.0,
+        "reference_image": null
+    },
+    "sentinel2": {
+        "collection": "COPERNICUS/S2_SR_HARMONIZED",
+        "CLOUDY_PIXEL_PERCENTAGE": 50,
+        "reference_image": null
+    },
+    "soilgrids": {
+        "__comment__": "properties: output variable name -> SoilGrids 2.0 property code. wv0033 = water content at 33 kPa (field capacity), wv1500 = at 1500 kPa (wilting point).",
+        "wcs_url": "https://maps.isric.org/mapserv",
+        "properties": {
+            "sand": "sand",
+            "clay": "clay",
+            "soc": "soc",
+            "wwfc": "wv0033",
+            "www": "wv1500"
+        },
+        "depths": ["0-5cm", "5-15cm", "15-30cm", "30-60cm"],
+        "statistic": "mean"
+    }
+}
