@@ -1,6 +1,7 @@
 # WCM(SWB) Model with irrigation scheme
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22961226.svg)](https://doi.org/10.5281/zenodo.22961226)
+[![Tests](https://github.com/martina01natali/WCM_SWB_Irri/actions/workflows/tests.yml/badge.svg)](https://github.com/martina01natali/WCM_SWB_Irri/actions/workflows/tests.yml)
 
 <p align="center">
   <img src="docs/graphical_abstract.png" width="600"

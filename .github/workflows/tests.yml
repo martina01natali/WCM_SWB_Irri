@@ -1,0 +1,30 @@
+# Unit tests in the conda environment from environment.yml.
+# The Ceregnano input data are not in the repository, so the tests that need
+# them are skipped here.
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -el {0}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: mamba-org/setup-micromamba@v2
+        with:
+          environment-file: environment.yml
+          cache-environment: true
+
+      - name: Install wcm_swb
+        run: pip install --no-deps -e .
+
+      - name: Run tests
+        run: pytest tests/ -v -rs

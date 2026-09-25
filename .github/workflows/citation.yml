@@ -1,0 +1,30 @@
+# Checks the citation metadata: CITATION.cff against the CFF schema (it drives
+# GitHub's "Cite this repository" button) and .zenodo.json as valid JSON (read
+# by Zenodo when a release is archived).
+name: Citation metadata
+
+on:
+  push:
+    branches: [main]
+    paths: [CITATION.cff, .zenodo.json, .github/workflows/citation.yml]
+  pull_request:
+    paths: [CITATION.cff, .zenodo.json, .github/workflows/citation.yml]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate CITATION.cff
+        run: |
+          pip install cffconvert
+          cffconvert --validate
+
+      - name: Validate .zenodo.json
+        run: python -m json.tool .zenodo.json > /dev/null
