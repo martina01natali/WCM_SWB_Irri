@@ -237,6 +237,13 @@ the full references, with BibTeX, are in [`CITATION.md`](CITATION.md).
 Machine-readable metadata are in [`CITATION.cff`](CITATION.cff) (GitHub's
 "Cite this repository" button) and [`.zenodo.json`](.zenodo.json).
 
+## AI usage disclosure
+
+This repository was prepared with the assistance of Claude Code (Anthropic,
+model Claude Opus 5.5), under the author's direction and review; the
+scientific method and model are the authors' own. See
+[`AI_DISCLOSURE.md`](AI_DISCLOSURE.md) for what the tool did and did not do.
+
 ## License
 
 GPL-3.0, see `LICENSE`.
