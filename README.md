@@ -1,9 +1,10 @@
 # WCM_SWB_Irri
 
-![Graphical abstract: Sentinel-2 NDVI describes the vegetation in the Water Cloud Model (WCM) and approximates the crop coefficient in the soil water balance (SWB); WCM and SWB are jointly calibrated with Sentinel-1 backscatter; the resulting irrigation estimates are compared with in-situ irrigation observations.](docs/graphical_abstract.png)
-
-*Graphical abstract of Natali et al. (2026), Remote Sensing of Environment,
-[doi:10.1016/j.rse.2026.115639](https://doi.org/10.1016/j.rse.2026.115639).*
+<p align="center">
+  <img src="docs/graphical_abstract.png" width="600"
+       alt="Graphical abstract: Sentinel-2 NDVI describes the vegetation in the Water Cloud Model (WCM) and approximates the crop coefficient in the soil water balance (SWB); WCM and SWB are jointly calibrated with Sentinel-1 backscatter to estimate irrigation.">
+  <br><em>Graphical abstract</em>
+</p>
 
 A Water Cloud Model coupled to a Soil Water Balance model (WCM-SWB), calibrated
 per field with Bayesian MCMC (PyMC) against Sentinel-1 backscatter, to
