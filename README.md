@@ -1,4 +1,4 @@
-# WCM_SWB_Irri
+# WCM(SWB,Irri) Model
 
 <p align="center">
   <img src="docs/graphical_abstract.png" width="600"
