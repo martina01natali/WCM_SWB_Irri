@@ -5,6 +5,7 @@
     {"name": "Natali, Martina"}
   ],
   "description": "<p>Per-field Bayesian (PyMC) calibration of a two-layer soil water balance model coupled to the Water Cloud Model against Sentinel-1 backscatter and Sentinel-2 NDVI, to estimate irrigation from satellite data without in-situ measurements. Includes the scripts that download the input data (Sentinel-1/2 via Google Earth Engine, SoilGrids, MERIDA) and notebooks to analyse the results.</p><p>This software was developed for the paper: Natali, M., Modanesi, S., De Santis, D., De Lannoy, G., Steele-Dunne, S., Flammini, A., Domeneghetti, A., Massari, C. (2026). Field-scale irrigation estimation using Sentinel-1 and Sentinel-2 data within a soil water balance model coupled to the Water Cloud Model. Remote Sensing of Environment, 346, 115639. https://doi.org/10.1016/j.rse.2026.115639. Please cite both this software and the paper.</p>",
+  "license": "gpl-3.0-only",
   "notes": "When using this software, please cite it together with the paper: Natali et al. (2026), Remote Sensing of Environment, 346, 115639, https://doi.org/10.1016/j.rse.2026.115639.",
   "keywords": [
     "irrigation",
