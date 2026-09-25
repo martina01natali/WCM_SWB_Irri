@@ -33,7 +33,7 @@ model coupled to the Water Cloud Model. *Remote Sensing of Environment*, 346,
 
 Natali, M. (2026). WCM_SWB_Irri: field-scale irrigation estimation with a
 soil water balance model coupled to the Water Cloud Model (Version 0.1.0)
-[Computer software]. Zenodo. <https://doi.org/10.5281/zenodo.XXXXXXX>
+[Computer software]. Zenodo. <https://doi.org/10.5281/zenodo.22961226>
 
 ```bibtex
 @software{Natali2026_WCM_SWB_Irri,
@@ -43,14 +43,19 @@ soil water balance model coupled to the Water Cloud Model (Version 0.1.0)
   version   = {0.1.0},
   year      = {2026},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.XXXXXXX},
+  doi       = {10.5281/zenodo.22961226},
   url       = {https://github.com/martina01natali/WCM_SWB_Irri}
 }
 ```
 
-The DOI above refers to all versions of the software; each release also has
-its own DOI, listed on the Zenodo record. Cite the version you used when
-reproducing results.
+The DOI above (10.5281/zenodo.22961226) refers to all versions of the software and
+always resolves to the latest one. Each release also has its own DOI, listed
+on the [Zenodo record](https://doi.org/10.5281/zenodo.22961226); cite the version you used when
+reproducing results:
+
+| Version | DOI |
+|---|---|
+| 0.1.0 | [10.5281/zenodo.22961227](https://doi.org/10.5281/zenodo.22961227) |
 
 Machine-readable metadata: [`CITATION.cff`](CITATION.cff) (GitHub's "Cite
 this repository" button) and [`.zenodo.json`](.zenodo.json).

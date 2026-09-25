@@ -9,6 +9,14 @@ authors:
   - family-names: Natali
     given-names: Martina
     email: martinanatali@cnr.it
+doi: 10.5281/zenodo.22961226
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22961226
+    description: All versions (concept DOI)
+  - type: doi
+    value: 10.5281/zenodo.22961227
+    description: Version 0.1.0
 repository-code: "https://github.com/martina01natali/WCM_SWB_Irri"
 license: GPL-3.0-only
 version: 0.1.0

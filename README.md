@@ -1,5 +1,7 @@
 # WCM(SWB) Model with irrigation scheme
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22961226.svg)](https://doi.org/10.5281/zenodo.22961226)
+
 <p align="center">
   <img src="docs/graphical_abstract.png" width="600"
        alt="Graphical abstract: Sentinel-2 NDVI describes the vegetation in the Water Cloud Model (WCM) and approximates the crop coefficient in the soil water balance (SWB); WCM and SWB are jointly calibrated with Sentinel-1 backscatter to estimate irrigation.">
@@ -232,7 +234,8 @@ See `02_analysis/README.md`.
 ## How to cite
 
 This software was developed for, and must be cited together with, the paper
-above. When you use it, please cite both the paper and the software (Zenodo):
+above. When you use it, please cite both the paper and the software
+([doi:10.5281/zenodo.22961226](https://doi.org/10.5281/zenodo.22961226)):
 the full references, with BibTeX, are in [`CITATION.md`](CITATION.md).
 Machine-readable metadata are in [`CITATION.cff`](CITATION.cff) (GitHub's
 "Cite this repository" button) and [`.zenodo.json`](.zenodo.json).
