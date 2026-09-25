@@ -1,7 +1,8 @@
 # 01_calibration
 
 Bayesian (PyMC) calibration of the WCM-SWB model against Sentinel-1
-backscatter and Sentinel-2 NDVI, for one field at a time.
+backscatter, for one field at a time (Sentinel-2 NDVI and meteorological
+data are inputs).
 
 All the actual model/engine code lives in `wcm_swb.model` — this directory
 only holds the driver scripts and per-run configuration.

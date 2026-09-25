@@ -14,9 +14,9 @@ license: GPL-3.0-only
 version: 0.1.0
 abstract: >-
   Per-field Bayesian (PyMC) calibration of a two-layer soil water balance
-  model coupled to the Water Cloud Model against Sentinel-1 backscatter and
-  Sentinel-2 NDVI, to estimate irrigation from satellite data without in-situ
-  measurements. Includes the scripts that download the input data
+  model coupled to the Water Cloud Model against Sentinel-1 backscatter, with
+  Sentinel-2 NDVI and meteorological data as inputs, to estimate irrigation
+  from satellite data without in-situ measurements. Includes the scripts that download the input data
   (Sentinel-1/2 via Google Earth Engine, SoilGrids, MERIDA) and notebooks to
   analyse the results.
 keywords:

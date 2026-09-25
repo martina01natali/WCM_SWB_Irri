@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "wcm-swb"
 version = "0.1.0"
-description = "Water Cloud Model + Soil Water Balance calibration engine for irrigation detection from Sentinel-1/2 data"
+description = "Water Cloud Model + Soil Water Balance calibration engine (against Sentinel-1 backscatter, Sentinel-2 NDVI as input) for irrigation estimation"
 readme = "README.md"
 authors = [{ name = "Martina Natali", email = "martinanatali@cnr.it" }]
 requires-python = ">=3.12"

@@ -30,9 +30,9 @@ covering the field; see `00_preprocessing/README.md`.
 
 ## Scope
 
-The pipeline calibrates the model on satellite observations and meteorological
-forcing only: no in-situ irrigation or soil moisture data are needed, and
-none are read.
+The pipeline calibrates the model against Sentinel-1 backscatter only, with
+Sentinel-2 NDVI and meteorological forcing as inputs: no in-situ irrigation or
+soil moisture data are needed, and none are read.
 
 The repository contains code only, no input data and no results: download
 the inputs with `00_preprocessing` and run the pipeline to produce the results

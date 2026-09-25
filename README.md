@@ -6,10 +6,11 @@
 [doi:10.1016/j.rse.2026.115639](https://doi.org/10.1016/j.rse.2026.115639).*
 
 A Water Cloud Model coupled to a Soil Water Balance model (WCM-SWB), calibrated
-per field with Bayesian MCMC (PyMC) against Sentinel-1 backscatter and
-Sentinel-2 NDVI, to estimate irrigation from satellite data. No in-situ
-irrigation data are needed: the model is calibrated on satellite observations
-and meteorological forcing only.
+per field with Bayesian MCMC (PyMC) against Sentinel-1 backscatter, to
+estimate irrigation from satellite data. Sentinel-2 NDVI (vegetation
+descriptor and crop coefficient) and meteorological reanalysis are model
+inputs. No in-situ irrigation data are needed: the model is calibrated on
+Sentinel-1 backscatter only.
 
 This repository contains the code and the data-processing workflow developed
 for the paper:
