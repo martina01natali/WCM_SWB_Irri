@@ -11,6 +11,12 @@ retention: Turek et al. 2023, doi:10.1016/j.geoderma.2023.116375) is served
 on a 250 m grid in the Interrupted Goode Homolosine projection. That
 projection is equal-area, so pixel/AOI overlap areas computed in it are true
 ground areas.
+
+Author:  Martina Natali <martinanatali@cnr.it> (GitHub: martina01natali)
+Created: 2026-09-24
+License: GPL-3.0 (see LICENSE)
+AI assistance: developed with the help of Claude Code (Anthropic,
+               Claude Opus 5.5) under the author's direction; see AI_DISCLOSURE.md
 """
 import json
 import math
